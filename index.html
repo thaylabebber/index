@@ -3,33 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>revisão</title>
-    <link rel="styleshit" href="style.css">
+    <title>Revisão</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="cabecalho">
-    <h1>site de revisão</h1>
-    <ul>
-        <li>inicio</li>
-        <li>sobre</li>
-        <li>contato</li>
-    </ul>
-    </header>
-    <nav class="navegacao">
-        <h2>menu lateral</h2>
-        <a hrfe="#">Persfil<</a>
-        <a hrfe="#">Configuracoes<</a>
-        <a hrfe="#">Ajuda<</a>
-    </nav>
-    <section class="secao">
-    <h2>painel do usuario</h2>
-      <P>Nome: Thayla Bebber</P>
-      <p>Curso: Desenvolvimento de sistemas</p>
-      <P>Status: Ativo</P>
-    <footer> class="rodape">
-        <P>&copy; desenvolvido por <strong>Thayla Bebber</strong></P>
-        <a href="#"></a>
-        <a href="#"></a>
-         </footer>
+    <div class="grupo">
+        <header class="cabecalho">
+            <h1>Site de revisão</h1>
+            <nav class="menu">
+                <a href="#">Inicios</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contatos</a>
+            </nav>
+        </header>
+        <div class="conteudo">
+            <nav class="navegacao">
+                <h2>Menu lateral</h2>
+               <ul>
+                <li>Perfil</li>
+                <li>Configurações</li>
+                <li>Ajuda</li>
+               </ul>
+            </nav>
+            <section class="secao">
+                <h2>Painel do Usuário</h2>
+                <p>Nome: <span id="nomeUsuario">Thayla Bebber</span></p>
+                <p>Curso: Desenvolvimento de Sistemas</p>
+                <p>Status: Ativo</p>
+                <hr>
+                <h3>Alrterar Nome</h3>
+                <div class="formulario">
+                    <input type="text" name="inputNome" id="inputNome">
+                    <button onclick="alterarNome()">alterar</button>
+                </div>
+
+                <h3>Alrterar Curso</h3>
+                <div class="formulario">
+                    <input type="text" name="inputNome" id="inputNome">
+                    <button onclick="alterarCurso()">alterar</button>
+                </div>
+
+                <h3>Alrterar Status</h3>
+                <div class="formulario">
+                    <input type="text" name="inputNome" id="inputNome">
+                    <button onclick="alterarStatus()">alterar</button>
+                </div>
+            </section>
+        </div>
+        <footer class="rodape">
+            <p>&copy; Desenvolvido por <strong>Thayla_Bebber</strong></p>
+            <div class="redes">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Icone do Instagram">Instagram</a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733553.png" alt="Icone do Github">Github</a>
+            </div>
+        </footer>
+    </div>
+    <script src="Script.js"></script>
 </body>
 </html>
+.
